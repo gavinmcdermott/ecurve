@@ -57,7 +57,7 @@ describe('Point', function () {
       var d = new BigInteger('1')
       var Q = curve.G.multiply(d)
 
-      assert.equal(Q.getEncoded().toString('hex'), '03161ff7528b899b2d0c28607ca52c5b86')
+      assert.equal(Q.getEncoded().toString('hex'), '0a161ff7528b899b2d0c28607ca52c5b86')
       Q.compressed = false
       assert.equal(Q.getEncoded().toString('hex'), '04161ff7528b899b2d0c28607ca52c5b86cf5ac8395bafeb13c02da292dded7a83')
     })
